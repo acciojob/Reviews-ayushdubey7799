@@ -71,15 +71,15 @@ const App = () => {
 
     return (
         <React.Fragment>
-            <header id="review-heading">OurReviews</header>
+            <header id="review-heading">Our Reviews</header>
             <section className="review">
-              <p id={index+1} className='author'>{reviews[index].name}</p>
+              <p id={"author-"+(index+1)} className='author'>{reviews[index].name}</p>
               <p className='job'>{reviews[index].job}</p>
               <p className='info'>{reviews[index].text}</p>
               <img className={"person-img"} src= {reviews[index].image}  />
               <button className="next-btn" onClick={next}>Next</button>
               <button className="prev-btn" onClick={prev}>Previous</button>
-              <button className="random-btn" onClick={rand}>Surprise Me</button>
+              <button className="random-btn" onClick={rand}>surprise me</button>
             </section>
         </React.Fragment>
     )
